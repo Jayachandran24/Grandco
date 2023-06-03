@@ -1,0 +1,70 @@
+{
+  "filters": [
+    {
+      "name": "All",
+      "operator": "*"
+    },
+    {
+      "name": "Payment Terminals",
+      "operator": ".brand"
+    },
+    {
+      "name": "Point Of Sale Solutions",
+      "operator": ".web"
+    },
+    {
+      "name": "Promotions",
+      "operator": ".graphic"
+    }
+  ],
+  "gallery": [
+    {
+      "filter": "graphic",
+      "image": "img/solution/talech.png",
+      "title": "Creativity Demand",
+      "type": "talech"
+    },
+    {
+      "filter": "web",
+      "image": "img/solution/poynt.png",
+      "title": "Through The Breaking",
+      "type": "ponyt"
+    },
+    {
+      "filter": "brand",
+      "image": "img/solution/payment.png",
+      "title": "Create With Creatives",
+      "type": "Branding"
+    },
+    {
+      "filter": "graphic",
+      "image": "img/solution/billing.png",
+      "title": "Energies of Love",
+      "type": "billing"
+    },
+    {
+      "filter": "web",
+      "image": "img/solution/newland.png",
+      "title": "See It Yourself",
+      "type": "newland"
+    },
+    {
+      "filter": "brand",
+      "image": "img/solution/billing.png",
+      "title": "Blast From The Past",
+      "type": "billing"
+    },
+    {
+      "filter": "web",
+      "image": "img/solution/payment.png",
+      "title": "See It Yourself",
+      "type": "payment"
+    },
+    {
+      "filter": "brand",
+      "image": "img/solution/poynt.png",
+      "title": "Blast From The Past",
+      "type": "poynt"
+    }
+  ]
+}

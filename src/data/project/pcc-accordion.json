@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Grow with Poynt",
+        "details": "Customizable, expandable, and integrates with the tools you need – Poynt is made for each stage of your business.",
+        "closed": false
+    },
+    {
+        "id": 2,
+        "title": "All payments accepted all the time.",
+        "details": "You offer your customers the products and services they love; don’t forget to let them pay the way they like.",
+        "closed": true
+    },
+    {
+        "id": 3,
+        "title": "A complete wireless payment solution.",
+        "details": "The device lets you accept payment anywhere, with the security and convenience you should expect in your payment solution.",
+        "closed": true
+    },
+    {
+        "id": 4,
+        "title": "Plug and play.",
+        "details": "The Poynt Smart Terminal comes with built-in compatibility for dozens of peripherals so you can get up and running, hassle-free.",
+        "closed": true
+    }
+]

@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/ingenico-smart-terminals": "pages/ingenico-smart-terminals.js",
+  "/": "pages/index.js",
+  "/home": "pages/home.js",
+  "/talech-register": "pages/talech-register.js"
+}
