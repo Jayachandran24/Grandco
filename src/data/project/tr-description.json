@@ -17,7 +17,7 @@
             "icondes": "Floral, Gift Shops, Boutique",
             "lookingfor":"Looking for a simple point-of-sale"
         },
-        {   "title":"alech Standard",
+        {   "title":"talech Standard",
             "icon": "img/Treg/open-sign.png",
             "icondes": "Mid-size Retail, Brick and Mortar",
             "lookingfor":"Looking for a mid-range point-of-sale"
@@ -45,7 +45,7 @@
             "icondes": "Events, Fairs, Farmer’s Markets",
             "lookingfor":"Looking for a simple point-of-sale"
         },
-        {   "title":"alech Standard",
+        {   "title":"talech Standard",
             "icon": "img/Treg/cup.png",
             "icondes": "Coffee Shop, Bakery, Fast Casual",
             "lookingfor":"Looking for a mid-range point-of-sale"
@@ -73,7 +73,7 @@
             "icondes": "Home Repair, Contractors, Studios",
             "lookingfor":"Looking for a simple point-of-sale"
         },
-        {   "title":"alech Standard",
+        {   "title":"talech Standard",
             "icon": "img/Treg/apple.png",
             "icondes": "Accounting, Legal, Medical, Gyms",
             "lookingfor":"Looking for a mid-range point-of-sale"

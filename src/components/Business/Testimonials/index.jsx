@@ -26,7 +26,7 @@ const Testimonials = ({ curve }) => {
   }, []);
 
   return (
-    <section className="testimonials slider-thumbs section-padding pb-0 bg-img parallaxie" data-background={curve ? "https://images.pexels.com/photos/6567737/pexels-photo-6567737.jpeg" : "img/background/14.jpg"} data-overlay-dark="6">
+    <section className="testimonials slider-thumbs section-padding pb-0 bg-img parallaxie" data-background={curve ? "img/background/testimonialbg.jpeg" : "img/background/14.jpg"} data-overlay-dark="6">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12">

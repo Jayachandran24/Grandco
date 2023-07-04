@@ -41,7 +41,7 @@ const IntroIst = () => {
                                 talech Register, the latest Android offering in our hardware lineup. Allow
                                 your customers to comfortably take payments with a seamless, all-in-one
                                 design that looks great on the counter and makes the process of checking
-                                out much more efcient. With talech Register, all Restaurant, Retail and
+                                out much more efficient. With talech Register, all Restaurant, Retail and
                                 Service-based talech customers can offer a complete solution that is
                                 aesthetically pleasing and drives the core talech payment functionality that
                                 has become standard.

@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="home-bus1 position-re">
-      <div className="background bg-img parallaxie valign" data-background="https://images.pexels.com/photos/975250/pexels-photo-975250.jpeg" data-overlay-dark="5">
+      <div className="background bg-img parallaxie valign" data-background="img/background/homebg.jpeg" data-overlay-dark="5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-10">

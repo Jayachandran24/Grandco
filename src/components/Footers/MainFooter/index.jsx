@@ -57,16 +57,16 @@ const Footer = ({ footerClass, footerBg, business, creative }) => {
               <div className="social circle-bord mt-30">
                 <ul className="rest horizontal-link">
                   <li>
-                    <a href={footerData.social_links.facebook}><i className="fab fa-facebook-f"></i></a>
-                    <a href={footerData.social_links.twitter} className="ms-1"><i className="fab fa-twitter"></i></a>
-                    <a href={footerData.social_links.instagram} className="ms-1"><i className="fab fa-instagram"></i></a>
-                    <a href={footerData.social_links.youtube} className="ms-1"><i className="fab fa-youtube"></i></a>
+                    <a href={footerData.social_links.facebook} target='_blank'><i className="fab fa-facebook-f"></i></a>
+                    <a href={footerData.social_links.twitter} className="ms-1" target='_blank'><i className="fab fa-twitter"></i></a>
+                    <a href={footerData.social_links.instagram} className="ms-1" target='_blank'><i className="fab fa-instagram"></i></a>
+                    {/* <a href={footerData.social_links.youtube} className="ms-1" target='_blank'><i className="fab fa-youtube"></i></a> */}
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-2 text-center">
             <div className="clumn">
               <h5 className="title fw-600 fz-20 mb-30">About Us</h5>
               <ul className="cmp-links">

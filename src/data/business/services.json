@@ -2,7 +2,7 @@
   {
     "id": 1,
     "icon": "fa fa-chart-bar ",
-    "img": "https://cdn-icons-png.flaticon.com/512/4990/4990690.png",
+    "img": "img/icons/POSsolutions.png",
     "title": "POS Solutions ",
     "detials": "We match a POS solution that is unique to your business",
     "tags": [
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "icon": "fa fa-dollar-sign",
-    "img": "https://cdn-icons-png.flaticon.com/512/2178/2178616.png",
+    "img": "img/icons/pricingoption.png",
     "title": "Multiple Pricing Options ",
     "detials": "With multiple pricing solutions we can match your business with the pricing option that will save you the most money",
     "tags": [
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "icon": "fa fa-money-bill",
-    "img": "https://cdn-icons-png.flaticon.com/512/8984/8984290.png",
+    "img": "img/icons/custompayment.png",
     "title": "Custom Payment Integrations",
     "detials": "Let our expert programmers connect your products and software solutions to include payments",
     "tags": [

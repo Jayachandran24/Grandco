@@ -36,7 +36,7 @@ const ContactCreative = () => {
         <FixedSearch />
         <Header title="Contact Us." />
         <main className="main-content">
-          <Contact />
+          <Contact/>
           <Footer footerClass="main-footer bg-gray-light" creative={true} />
         </main>
       </MainLightLayout>

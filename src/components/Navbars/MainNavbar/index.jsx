@@ -28,10 +28,10 @@ const Navbar = ({ navbarRef, theme, logoTheme }) => {
     <nav className={`navbar navbar-expand-lg ${theme}`} ref={navbarRef}>
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <div className="logo">
-            {logoTheme === 'dark' && <img src="img/logo-dark.png" alt="" />}
-            {logoTheme === 'light' && <img src="img/logo-light.png" alt="" />}
-            {!logoTheme && <img src="img/logo-light.png" alt="" />}
+          <div className="logo">  
+            {logoTheme === 'dark' && <img src="img/logo-dark.png" alt="Logo"/>}
+            {logoTheme === 'light' && <img src="img/logo-light.png" alt="Logo" />}
+            {!logoTheme && <img src="img/logo-light.png" alt="Logo" />}
           </div>
         </Link>
 

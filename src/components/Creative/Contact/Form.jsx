@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// import {contactus} from '../../../../public/contact.php'
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +13,7 @@ const Form = () => {
 
   const validateForm = (formValues) => {
     if (!formValues.name || !formValues.email || !formValues.message) {
-      setErrMessage('Please fill in all fields');
+      setErrMessage('Please fill in all fields*');
       return false;
     }
     if (formValues.name.length < 5) {
@@ -34,34 +35,63 @@ const Form = () => {
     return true;
   }
 
-  const handleChange = (e) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }))
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    //= Validate Form
+  
+    // Validate Form
     if (!validateForm(formData)) return;
-
-    //= Clear Error Message
+  
+    // Clear Error Message
     setErrMessage('');
-
-    //= Sumbit The Form
-    document.forms[0].submit();
+  
+    // Submit The Form
+    fetch('contact.php', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        // Add any additional headers if required
+      },
+      // body: JSON.stringify(formData),
+    })
+      .then(response => {
+        // Handle the response from the server
+        // For example, you can display a success message or handle any errors
+      })
+      .catch(error => {
+        // Handle any network errors or exceptions
+      });
   };
+  
+  
+
+    const handleChange = (e) => {
+      setFormData(prev => ({
+        ...prev,
+        [e.target.name]: e.target.value
+      }))
+    }
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   //= Validate Form
+  //   if (!validateForm(formData)) return;
+
+  //   //= Clear Error Message
+  //   setErrMessage('');
+  //   //= Sumbit The Form
+  //   document.forms[0].submit();
+  // };
 
   return (
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-lg-11">
           <div className="box-shadow to-up">
-            <form id="contact-form" method="post" action="contact.php">
+            <form id="contact-form">
               {
-                errMessage && <div className="messages">{errMessage}</div>
+                errMessage && <div className="messages" style={{color:'red'}}>{errMessage}</div>
               }
 
               <div className="controls row">
@@ -74,21 +104,21 @@ const Form = () => {
 
                 <div className="col-lg-6 md-mb30">
                   <div className="form-group mb-30">
-                    <input id="form_name" type="text" name="name" placeholder="Name" required="required" onChange={handleChange} value={formData.name} />
+                    <input id="form_name" type="text" name="name" placeholder="Name*" required="required" onChange={handleChange} value={formData.name} />
                   </div>
 
                   <div className="form-group mb-30">
-                    <input id="form_email" type="email" name="email" placeholder="Email" required="required" onChange={handleChange} value={formData.email} />
+                    <input id="form_email" type="email" name="email" placeholder="Email*" required="required" onChange={handleChange} value={formData.email} />
                   </div>
 
                   <div className="form-group">
-                    <input id="form_subject" type="text" name="subject" placeholder="Subject" required="required" onChange={handleChange} value={formData.subject} />
+                    <input id="form_subject" type="text" name="subject" placeholder="Subject*" required="required" onChange={handleChange} value={formData.subject} />
                   </div>
                 </div>
 
                 <div className="col-lg-6">
                   <div className="form-group sam-height">
-                    <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required" onChange={handleChange} value={formData.message}></textarea>
+                    <textarea id="form_message" name="message" placeholder="Message*" rows="4" required="required" onChange={handleChange} value={formData.message}></textarea>
                   </div>
                 </div>
 
