@@ -13,10 +13,11 @@ const FixedSearch = () => {
           <span className="pe-7s-close close-icon"></span>
         </div>
         <div className="search-form">
-          <form action="contact.php">
+          {/* <form action="contact.php"> */}
+          <form >
             <div className="form-group">
               <input type="text" name="search" placeholder="Enter Your Keywords" />
-              <button type="submit"><span className="pe-7s-search"></span></button>
+              <button type="button"><span className="pe-7s-search"></span></button>
             </div>
           </form>
         </div>

@@ -12,7 +12,7 @@ const Header = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10 col-md-10">
             <div className="caption text-center">
-              <h1 className="fz-50 fw-600">We Are Help Businesses Accept Payments And Grow Their Business</h1>
+              <h1 className="fz-50 fw-600">We Help Businesses Accept Payments And Grow Their Business</h1>
             </div>
           </div>
         </div>

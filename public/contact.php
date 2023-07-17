@@ -1,48 +1,69 @@
 <?php
+    // session_start();
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Methods: *");
+    header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, X-Requested-With");
+    $rest_json = file_get_contents("php://input");
+    $_POST = json_decode($rest_json, true);
 
-// configure
-$from = 'Demo contact form <demo@domain.com>';
-$sendTo = 'Test contact form <hisham.a.mohamed007@gmail.com>'; // Add Your Email
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+    $Name = $_POST['name'];
+    $Emails = $_POST['email'];
+    $Subject = $_POST['subject'];
+    $Message = $_POST['message'];
 
-// let's do the sending
+    echo "Name: " . $Name . '<br>';
+    echo "Email: " . $Emails . '<br>';
+    echo "Subject: " . $Subject . '<br>';
+    echo "Message: " . $Message . '<br>';
 
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
+    // configure
+    $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+    $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-    foreach ($_POST as $key => $value) {
+    // Let's send the email
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
+    require 'vendor/phpmailer/phpmailer/src/Exception.php';
+    require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+    require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+    $mail = new PHPMailer(true);
+    try {
+        // Server settings
+        $mail->SMTPDebug = 0;
+        $mail->isSMTP();
+        $mail->Host = 'mail.grinfotech.com';   
+        $mail->SMTPAuth = true; 
+        $mail->Username = 'jayachandran@grinfotech.com';
+        $mail->Password = 'Bgt56yhN@';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        // Recipients
+        $mail->setFrom($Emails);
+        $mail->addAddress($Emails);
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = 'New message from contact form';
+        $mail->Body = "
+        <p><b>Name :</b> " . $Name . "</p>
+        <p><b>Email :</b> " . $Emails . "</p>
+        <p><b>Message :</b> " . $Message . " </p>";
+
+        $mail->send();
+
+        
+        // $_SESSION['messege'] = $okMessage;
+
+        echo 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+        // header('Location: index.php');
+        exit();
+    } catch (Exception $e) {
+        echo 'There was an error while submitting the form. Please try again later';
+        
     }
+?>
 
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
-    );
-    
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
-}
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
-
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-
-    header('Content-Type: application/json');
-
-    echo $encoded;
-}
-else {
-    echo $responseArray['message'];
-}

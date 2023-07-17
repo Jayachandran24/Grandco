@@ -35,24 +35,20 @@
   ],
   "categories": [
     {
-      "name": "Business",
+      "name": "Genarate Invoice",
       "posts": "33"
     },
     {
-      "name": "Lifestyle",
+      "name": "Learn and Support",
       "posts": "05"
     },
     {
-      "name": "Creative",
+      "name": "New Release",
       "posts": "28"
     },
     {
-      "name": "WordPress",
+      "name": "Technology",
       "posts": "17"
-    },
-    {
-      "name": "Design",
-      "posts": "45"
     }
   ],
   "latest_posts": [

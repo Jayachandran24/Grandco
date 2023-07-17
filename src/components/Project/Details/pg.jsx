@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 import details from '../../../data/project/pg-details.json';
 
 const PgDetails = () => {
@@ -18,7 +18,7 @@ const PgDetails = () => {
                         details.images.map((image, idx) => (
                             <div className="col-md-4" key={idx}>
                                 <div>
-                                    <img alt="" src={image} />
+                                    <img alt="" src={image} style={{height:'350px'}}/>
                                 </div>
                             </div>
                         ))

@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
+import { Link } from "react-router-dom";
 
 const Icon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -14,8 +13,8 @@ const SingleBlog = ({ blog }) => {
         <div className="img">
           <img src={blog.image} alt="" />
           <div className="tags">
-            <Link href="/blog-grid-clean"><a className="gat">{blog.tag}</a></Link>
-            <Link href="/blog-grid-clean"><a className="tag"><Icon /></a></Link>
+            <Link href="/blog"><a className="gat">{blog.tag}</a></Link>
+            <Link href="/blog"><a className="tag"><Icon /></a></Link>
           </div>
         </div>
         <div className="cont">
@@ -29,7 +28,8 @@ const SingleBlog = ({ blog }) => {
           </div>
           <div className="title">
             <h5>
-              <Link href="/blog-post"><a>{blog.title}</a></Link>
+              {/* <Link href="/blog-post"><a>{blog.title}</a></Link> */}
+              <a>{blog.title}</a>
             </h5>
           </div>
         </div>

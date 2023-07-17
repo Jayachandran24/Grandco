@@ -2,7 +2,7 @@ import headerData from '../../../data/project/header.json';
 
 const NptHeader = () => {
     return (
-        <section className="works-header bg-img parallaxie d-flex align-items-end" style={{ backgroundImage: "url('img/portfolio/project2/bg.jpg')" }} data-overlay-dark="4">
+        <section className="works-header bg-img parallaxie d-flex align-items-end" style={{ backgroundImage: "url('img/solution/newslandpayment.png')" }} data-overlay-dark="4">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7 col-md-9">

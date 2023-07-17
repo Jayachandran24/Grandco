@@ -10,10 +10,10 @@ const Numbers = () => {
               <div className="col-lg-3" key={idx}>
                 <div className="bloc text-center">
                   <div className="numb valign mb-20">
-                    <h3 className="fz-60 fw-300 full-width">{ number.value }{ number.operator ? <i className="fz-30">{ number.operator }</i> : null }</h3>
+                    <h3 className="fz-60 fw-300 full-width">{number.operator ? <i className="fz-30">{number.operator}</i> : null}{number.value}</h3>
                   </div>
                   <div className="cont">
-                    <h6 className="fw-600 text-u ls1 fz-14">{ number.title }</h6>
+                    <h6 className="fw-600 text-u ls1 fz-14">{number.title}</h6>
                   </div>
                 </div>
               </div>

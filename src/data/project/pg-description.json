@@ -36,5 +36,23 @@
       "title": "Administrative toolst",
       "details": "Add employees and assign roles based on access rights."
     }
+  ],
+  "Gain": [
+    {
+      "numb": "01",
+      "title": "Encryption"
+    },
+    {
+      "numb": "02",
+      "title": "Tokenization"
+    },
+    {
+      "numb": "03",
+      "title": "Online cardholder validation"
+    },
+    {
+      "numb": "04",
+      "title": "Integrated fraud prevention"
+    }
   ]
 }

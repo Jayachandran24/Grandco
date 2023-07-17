@@ -8,7 +8,7 @@
   "links": [
     {
       "title": "Company",
-      "url": "/coming-soon"
+      "url": "/home"
     },
     {
       "title": "Affiliates",
@@ -16,7 +16,7 @@
     },
     {
       "title": "Services",
-      "url": "/coming-soon"
+      "url": "/services"
     },
     {
       "title": "Products",
@@ -25,24 +25,23 @@
   ],
   "recent_posts": [
     {
-      "url": "/",
+      "url": "/blog",
       "image": "img/solution/billing.png",
       "title": "E-Invoicing",
       "date": "October 12, 2019"
     },
     {
-      "url": "/",
+      "url": "/blog",
       "image": "img/solution/ist.png",
       "title": "A way to success for small business or startup companies",
       "date": "September 6, 2019"
     },
     {
-      "url": "/",
+      "url": "/blog",
       "image": "img/solution/billing.png",
       "title": "Professional Invoice Solution For Freelancers",
       "date": "August 20, 2019"
     }
-    
   ],
   "address": "Canada -  Unit 4   677 Romaine St Peterborough ON, K9J 2E6",
   "email": "info@grandco.ca",

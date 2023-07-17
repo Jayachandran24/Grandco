@@ -650,7 +650,7 @@ img.left {
 }
 
 .text-black {
-  color: #000;
+  color: #000 !important;
 }
 
 .text-dark {
@@ -10242,7 +10242,7 @@ body.index-main .bg-gray {
 
   .navbar .logo {
     margin-left: 15px;
-    width: 50px;
+    width: 170px;
   }
 
   .nav-scroll .navbar-collapse .nav-link,
@@ -10911,7 +10911,7 @@ body.index-main .bg-gray {
   }
 
   .navbar .logo {
-    width: 40px;
+    width: 170px;
   }
 
   .fw-700 {
@@ -11065,5 +11065,12 @@ body.index-main .bg-gray {
 }
 
 .serv-row .col-lg-4:nth-child(2) .item h5 {
-  color: transparent !important;
+  color: transparent;
+}
+
+.homeicons img{
+  /* background-image: linear-gradient(to right, #90ce85, #00dead, #338b93) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; */
+  fill: red !important;
 }

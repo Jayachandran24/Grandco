@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 import { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ModalVideo from "react-modal-video";
@@ -18,7 +18,7 @@ const Testimonials = ({ additionalClass, services }) => {
       <div className="container">
         <div className="bg-img bg-fixed" style={{ backgroundImage: "url('img/background/servicepg.jpg')" }} data-overlay-dark="4">
           <div className="play-button">
-            <a href="https://youtu.be/AzwC6umvd1s" className="btn vid" onClick={openVideo}>
+            <a href="https://www.youtube.com/watch?v=Iqr3XIhSnUQ" className="btn vid" onClick={openVideo}>
               <svg width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <circle className="circle" cx="50" cy="50" r="48" stroke="white" strokeWidth="2" fill="none" />
               </svg>
@@ -49,9 +49,9 @@ const Testimonials = ({ additionalClass, services }) => {
                           <p>{testimonial.text}</p>
                           <div className="info flex mt-50">
                             <div className="author-img valign">
-                              <div className="circle">
-                                <img src={testimonial.image} alt="" />
-                              </div>
+                              {/* <div className="circle">
+                                {/* <img src={testimonial.image} alt="" /> */}
+                              {/* </div>  */}
                             </div>
                             <div className="author-info valign">
                               <div className="full-width">

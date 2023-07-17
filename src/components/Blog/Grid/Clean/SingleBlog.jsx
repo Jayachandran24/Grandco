@@ -6,7 +6,7 @@ const SingleBlog = ({ blog }) => {
     <div className="col-lg-4">
       <div className="item shadw bord mb-30">
         <div className="img radius-5">
-          <img src={blog.image} alt="" style={{ height: '2vh', objectFit: 'cover' }} />
+          <img src={blog.image} alt="" style={{ height: '220px', objectFit: 'cover' }} />
         </div>
         <div className="cont">
           <div className="info">

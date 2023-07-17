@@ -17,9 +17,9 @@ const Services = () => {
             services.map(service => (
               <div className="col-lg-4" key={service.id}>
                 <div className="item shadw bord text-center">
-                  <div className="icon fz-50 mb-15 rest">
+                  <div className="icon fz-50 mb-15 rest homeicons">
                     {/* <span className={`${service.icon} gr-green-text`}></span> */}
-                    <img src={service.img} alt="" style={{ width: "70px" }} />
+                    <img src={service.img} className="gr-green-text" alt="icons" style={{ width: "60px", }} />
                   </div>
                   <h6 className="mb-15">{service.title}</h6>
                   <p>{service.detials}</p>

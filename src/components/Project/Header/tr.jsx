@@ -2,12 +2,12 @@ import headerData from '../../../data/project/header.json';
 
 const TR = () => {
     return (
-        <section className="works-header bg-img parallaxie d-flex align-items-end" style={{ backgroundImage: "url('img/portfolio/project2/bg.jpg')" }} data-overlay-dark="4">
+        <section className="works-header bg-img parallaxie d-flex align-items-end" style={{ backgroundImage: "url('img/portfolio/project2/talechregister.png')" }} data-overlay-dark="4">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7 col-md-9">
                         <div className="cont mb-40">
-                            <h6>Dummy Text</h6>
+                            <h6>Introducing</h6>
                             <h2>Talech Register</h2>
                         </div>
                     </div>

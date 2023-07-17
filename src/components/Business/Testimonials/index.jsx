@@ -1,10 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import { useEffect, useRef, useLayoutEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import SwiperCore, { Navigation, Controller } from "swiper";
+// import SwiperCore, {Navigation, Controller} from 'swiper';
 import parallaxie from '../../../common/parallaxie';
 import testimonials from '../../../data/business/testimonials.json';
-
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -26,7 +27,7 @@ const Testimonials = ({ curve }) => {
   }, []);
 
   return (
-    <section className="testimonials slider-thumbs section-padding pb-0 bg-img parallaxie" data-background={curve ? "https://images.pexels.com/photos/6567737/pexels-photo-6567737.jpeg" : "img/background/14.jpg"} data-overlay-dark="6">
+    <section className="testimonials slider-thumbs section-padding pb-0 bg-img parallaxie" data-background={curve ? "img/background/testimonialbg.jpeg" : "img/background/14.jpg"} data-overlay-dark="6">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12">

@@ -6,65 +6,59 @@
     },
     {
       "name": "Payment Terminals",
-      "operator": ".brand"
+      "operator": ".Payment"
     },
     {
       "name": "Point Of Sale Solutions",
-      "operator": ".web"
+      "operator": ".POS"
     },
     {
       "name": "Promotions",
-      "operator": ".graphic"
+      "operator": ".Promotions"
     }
   ],
   "gallery": [
     {
-      "filter": "graphic",
+      "link": "/talech-register",
+      "filter": "POS",
       "image": "img/solution/talech.png",
-      "title": "Creativity Demand",
-      "type": "talech"
+      "title": "Talech Register",
+      "type": ""
     },
     {
-      "filter": "web",
-      "image": "img/solution/poynt.png",
-      "title": "Through The Breaking",
-      "type": "ponyt"
+      "link": "/ingenico-smart-terminals",
+      "filter": "Payment",
+      "image": "img/solution/ist.png",
+      "title": "Ingenico Smart Terminals",
+      "type": ""
     },
     {
-      "filter": "brand",
-      "image": "img/solution/payment.png",
-      "title": "Create With Creatives",
-      "type": "Branding"
+      "link": "/vision-source-members",
+      "filter": "Promotions",
+      "image": "img/solution/newslandpayment.png",
+      "title": "Newland Payment Terminal",
+      "type": ""
     },
     {
-      "filter": "graphic",
+      "link": "/billing-invoice",
+      "filter": "POS",
       "image": "img/solution/billing.png",
-      "title": "Energies of Love",
-      "type": "billing"
+      "title": "Billing and Invoicing",
+      "type": " "
     },
     {
-      "filter": "web",
-      "image": "img/solution/newland.png",
-      "title": "See It Yourself",
-      "type": "newland"
-    },
-    {
-      "filter": "brand",
-      "image": "img/solution/billing.png",
-      "title": "Blast From The Past",
-      "type": "billing"
-    },
-    {
-      "filter": "web",
+      "link": "/payment-gateway",
+      "filter": "Payment",
       "image": "img/solution/payment.png",
-      "title": "See It Yourself",
-      "type": "payment"
+      "title": "Mobile Terminals",
+      "type": " "
     },
     {
-      "filter": "brand",
+      "link": "/poynt-for-connected-commerce",
+      "filter": "Payment",
       "image": "img/solution/poynt.png",
-      "title": "Blast From The Past",
-      "type": "poynt"
+      "title": "Poynt for connected commerce",
+      "type": " "
     }
   ]
 }
